@@ -23,7 +23,7 @@
     "hbs": "^4.0.1",
     "jade": "^1.9.1",
     "mocha": "~1.14.0",
-    "mongoose": "^4.4.1",
+    "mongoose": "^5.0.12",
     "morgan": "^1.5.1",
     "node-fetch": "^2.0.0",
     "passport": "^0.2.1",

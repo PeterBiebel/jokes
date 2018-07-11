@@ -1,17 +1,17 @@
 <div class="container">
-	<h1>Profile Page</h1>
+	<h1>Generate Random Jokes</h1>
 
 	{{#if user}}
 	    username: {{user.username}}
 	{{/if}}
-	<form action="/newFormation" method="post">
-	  <input type="text" name="name" value="Formation">
-	  <input type="submit" value="Submit">
-	</form>
+	
 
-	{{#each formations}}
-		<ul>
-			<li><a href="/formation/{{this._id}}">{{this.name}}</a></li>
-		</ul>
-	{{/each}} 
-</div>
+	<button type="button" class="btn">Click me!</button>
+	<p class="text">Replace me!!</p>
+	<button type="button" class="like">Like</button>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="javascript/script.js"></script>
+
