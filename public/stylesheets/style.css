@@ -1,8 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-  padding: 50px;
+  
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #eee;
+
 }
 
 a {
   color: #00B7FF;
+}
+a:hover {
+	color: yellow;
+}
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+.container {
+	
+	margin-top: 100px;
+}
+header > div#logo > h1 {
+	color: white;
+	font-size: 8vw;
+}
+header > div#logo {
+	text-align: left;
+	padding-left: 10px;
+}
+iframe {
+	width: 100%;
+	height: 500px;
+	pointer-events: none;
+	background-color: white;
+}
+#lastJoke {
+	font-style: italic;
+}
+button {
+	background: yellow;
+
+}
+.remove.btn {
+	padding: 5px;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+	
+}
+.newJoke.btn, .like.btn {
+	padding: 10px;
+}
+.userList {
+	position: relative;
+	z-index: 0;
+}
+.userList li {
+
+    line-height: 50px;
+    position: relative;
+    padding-right: 20px;
+
+}
+.info {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 17px;
+}
+.text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+}
+.userList li span {
+	width: 90%;
+    display: block;
+	border-top: 1px solid black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+@media only screen and (min-width: 600px) { /*desktop*/
+    body {
+        background-color: lightblue;
+    }
+    header > div#logo > h1 {
+		color: green;
+		font-size: 30px;
+	}
+	header > div#logo{
+		text-align: center;
+	}
+	.container {
+	
+	margin-top: 150px;
+}
 }

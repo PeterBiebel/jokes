@@ -3,14 +3,60 @@
   <head>
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/button.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    
+    <script src="./javascript/navbar.js"></script>
     <script src="./javascript/script.js"></script>
 </head>
   <body>
+    <header>
+            
+        <div id="logo" class="menuUp">
+
+            <h1>FUNNY TIMES</h1>
+                            
+            <div id="navToggle"><a href="#">Menu</a></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/jokes">New Jokes</a></li>
+                 <li><a href="/gifs">GIFS</a></li>
+                <li>
+                  {{#if user}}
+                    <a href="#">{{user.username}} <span class="toggle">Expand</span><span class="caret"></span></a>
+                    {{else}}
+                     <a href="#">Sign Up<span class="toggle">Expand</span><span class="caret"></span></a>
+                     {{/if}}
+                    <nav>
+                        <ul>
+                            {{#if user}}
+                              
+                             <li> <a href="/logout">LogOut</a></li>
+                             {{else}}
+                             <li> <a href="/register">Register</a></li>
+                             <li> <a href="/login">Log In</a></li>
+                            {{/if}}
+                            
+                            
+                           
+                        </ul>
+                    </nav>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+     
     {{{body}}}
   </body>
 </html>

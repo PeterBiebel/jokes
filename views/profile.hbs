@@ -1,17 +1,30 @@
 <div class="container">
-	<h1>Generate Random Jokes</h1>
+	<h1>Jokes You Like!</h1>
 
 	{{#if user}}
 	    username: {{user.username}}
 	{{/if}}
 	
 
-	<button type="button" class="btn">Click me!</button>
-	<p class="text">Replace me!!</p>
-	<button type="button" class="like">Like</button>
+	
+<ul class="userList">
+{{#each user.jokes}}
 
+<li>
+	{{#if this.gif}}
+	<span><iframe src={{this.joke}} frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></span>
+	
+	{{else}}
+
+	<span> {{this.joke}}</span>
+	{{/if}}
+	<button id={{this.id}} class="remove btn btn--stripe">Remove!</button>
+</li>
+{{/each}}
+</ul>
 
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
 <script src="javascript/script.js"></script>
 

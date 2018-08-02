@@ -14,14 +14,14 @@ const router = express.Router();
 
 
 
-//     //res.json({'success':true});
+//     res.json({'success':true});
 
-// })
+//  })
 
-router.get('/', (req, res) => {
-  res.json({
-    is: 'working'
-  })
-});
+// router.get('/', (req, res) => {
+//   res.json({
+//     is: 'working'
+//   })
+// });
 
 module.exports = router;
