@@ -14,7 +14,7 @@ router.get('/gifs', isLoggedIn, (req, res) => {
     res.render('gifs', { user : req.user});
 
     console.log(req.body);
-    
+
 });
 
 
@@ -27,7 +27,7 @@ router.get('/register', (req, res) => {
 });
 
 router.post('/register', (req, res, next) => {
-    Account.register(new Account({ username : req.body.username }), req.body.password, (err, account) => {
+    Account.register(new Account({ username : req.body.username, name: req.body.name }), req.body.password, (err, account) => {
         if (err) {
             console.log(err);
           return res.render('register', { error : err.message });

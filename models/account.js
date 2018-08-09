@@ -7,7 +7,7 @@ const Account = new Schema({
     password: String,
     jokes: Array,
     bio: String,
-    
+    name: String,
 });
 
 //account = Account.create({username: "blah", password: "asdfad", jokes: ["bradeh"]});
