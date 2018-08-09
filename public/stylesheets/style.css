@@ -60,6 +60,7 @@ button {
 .userList {
 	position: relative;
 	z-index: 0;
+	list-style-type: none;
 }
 .userList li {
 
@@ -70,7 +71,8 @@ button {
 }
 .info {
 	font-family: 'PT Sans', sans-serif;
-	font-size: 17px;
+	font-size: 25px;
+	margin: 20px 0;
 }
 .text {
 	font-family: 'Open Sans', sans-serif;
@@ -82,6 +84,12 @@ button {
 	border-top: 1px solid black;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
+}
+#genre {
+	margin-bottom: 20px;
+	padding: 10px;
+	height: 20px;
+	width: 150px;
 }
 @media only screen and (min-width: 600px) { /*desktop*/
     body {

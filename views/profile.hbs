@@ -1,9 +1,9 @@
 <div class="container">
 	<h1>Jokes You Like!</h1>
 
-	{{#if user}}
+	<!--{{#if user}}
 	    username: {{user.username}}
-	{{/if}}
+	{{/if}}-->
 	
 
 	
@@ -13,7 +13,7 @@
 <li>
 	{{#if this.gif}}
 	<span><iframe src={{this.joke}} frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></span>
-	
+
 	{{else}}
 
 	<span> {{this.joke}}</span>
