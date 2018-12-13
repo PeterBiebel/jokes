@@ -37,7 +37,7 @@ iframe {
 	width: 100%;
 	height: 500px;
 	pointer-events: none;
-	background-color: white;
+	/*background-color: white;*/
 }
 #lastJoke {
 	font-style: italic;
